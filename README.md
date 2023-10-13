@@ -11,6 +11,8 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 Given the class imbalance ratio, we recommend measuring the accuracy using the Area Under the Precision-Recall Curve (AUPRC). Confusion matrix accuracy is not meaningful for unbalanced classification.
 
+## Getting started
+
 ### Data link:
 1. [Download Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) intended for training the transaction classifier.
 2. Extract the contents from the downloaded file, place the "creditcard.csv" file in the root directory, and update the datapath in the respective Google Collab notebooks.
