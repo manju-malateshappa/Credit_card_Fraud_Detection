@@ -25,3 +25,4 @@ Given the class imbalance ratio, we recommend measuring the accuracy using the A
 
 The following resources were used in creating this project:
 - [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- [Dealing with Imbalanced Datasets]([https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets)https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets)
