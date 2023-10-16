@@ -19,6 +19,7 @@ Given the class imbalance ratio, we recommend measuring the accuracy using the A
 
 ### Run:
 1. Open the Google Colab notebook, and if the data file ("creditcard.csv") is not correctly mapped to the local disk, upload it within the Colab environment. Afterward, proceed to execute the notebook!
+2. Checkout the notebook - Dealing_With_Imbalanced_Datasets.ipynb for more advanced techniques in model training (undersampling, oversampling) and also different scikit learn  classifiers and Tensorflow Neural Networks classifiers
 
 ## Credits
 
