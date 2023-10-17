@@ -1,28 +1,50 @@
 # Credit Card Fraud Detection
 
-### Context:
-It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
+## Table of Contents
 
-### Content:
-The dataset contains transactions made by credit cards in September 2013 by European cardholders.
-This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) accounts for 0.172% of all transactions.
+1. [Context](#context)
+2. [Dataset Overview](#dataset-overview)
+3. [Getting Started](#getting-started)
+   - [Data Download](#data-download)
+   - [How to Run](#how-to-run)
+4. [Advanced Techniques](#advanced-techniques)
+5. [Credits](#credits)
 
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependent cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+## Context
 
-Given the class imbalance ratio, we recommend measuring the accuracy using the Area Under the Precision-Recall Curve (AUPRC). Confusion matrix accuracy is not meaningful for unbalanced classification.
+Credit card fraud is a critical issue for financial institutions. Detecting fraudulent transactions promptly is essential to protect customers from unauthorized charges. This project focuses on developing a system for identifying fraudulent credit card transactions.
 
-## Getting started
+## Dataset Overview
 
-### Data link:
-1. [Download Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) intended for training the transaction classifier.
-2. Extract the contents from the downloaded file, place the "creditcard.csv" file in the root directory, and update the datapath in the respective Google Collab notebooks.
+The dataset contains credit card transactions made by European cardholders in September 2013. It includes transactions that occurred over two days, with a total of 492 frauds out of 284,807 transactions. The dataset is highly imbalanced, with fraudulent transactions accounting for only 0.172% of all transactions.
 
-### Run:
-1. Open the Google Colab notebook, and if the data file ("creditcard.csv") is not correctly mapped to the local disk, upload it within the Colab environment. Afterward, proceed to execute the notebook!
-2. Checkout the notebook - Dealing_With_Imbalanced_Datasets.ipynb for more advanced techniques in model training (undersampling, oversampling) and also different scikit learn  classifiers and Tensorflow Neural Networks classifiers
+The dataset features numerical input variables (V1 to V28) derived from a PCA transformation. The original features are not provided due to confidentiality issues. Features 'Time' and 'Amount' have not undergone PCA transformation. 'Time' represents the seconds elapsed since the first transaction, and 'Amount' is the transaction amount. The target variable 'Class' takes the value 1 for fraud and 0 for legitimate transactions.
+
+Given the class imbalance, accuracy is not a meaningful metric. The Area Under the Precision-Recall Curve (AUPRC) is recommended for evaluation.
+
+## Getting Started
+
+### Data Download
+
+1. **Download the Dataset**: [Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+2. Extract the contents from the downloaded file and place the "creditcard.csv" file in the project's root directory.
+
+### How to Run
+
+1. **Google Colab Notebook**: Open the `Credit_card_fraud_detection_SVM.ipynb` notebook using Google Colab.
+2. **Upload Data**: If the data file ("creditcard.csv") is not mapped correctly to the Colab environment, upload it within the Colab notebook.
+3. **Execute Notebook**: Run the notebook to explore the data, preprocess it, and build the SVM-based credit card fraud detection model.
+
+## Advanced Techniques
+
+Check out the notebook `Dealing_With_Imbalanced_Datasets.ipynb` for more advanced techniques in model training (undersampling, oversampling) using various scikit-learn classifiers and TensorFlow neural network classifiers.
 
 ## Credits
 
-The following resources were used in creating this project:
-- [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+This project was made possible with the following resources:
+
+- [Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - [Dealing with Imbalanced Datasets](https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets)
+
+Feel free to explore and use this project to enhance your understanding of credit card fraud detection.
+
